@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.8)  26 SEP 2023 16:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.8)  26 SEP 2023 09:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./PS01.tex
-(PS01.tex
+**./PS01_answersJZ.tex
+(PS01_answersJZ.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-03-30>
 (C:\Users\carty\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -825,39 +825,65 @@ Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@dima=\skip65
 \bigstrutjot=\dimen305
 )
-(C:\Users\carty\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count327
+(C:\Users\carty\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+
+(C:\Users\carty\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/07/31 v3.6n Customizing captions (AR)
+
+(C:\Users\carty\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen306
+\captionmargin=\dimen307
+\caption@leftmargin=\dimen308
+\caption@rightmargin=\dimen309
+\caption@width=\dimen310
+\caption@indent=\dimen311
+\caption@parindent=\dimen312
+\caption@hangindent=\dimen313
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count327
+\c@continuedfloat=\count328
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count329
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count330
+) (C:\Users\carty\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count331
 \lst@gtempboxa=\box74
 \lst@token=\toks52
-\lst@length=\count328
-\lst@currlwidth=\dimen306
-\lst@column=\count329
-\lst@pos=\count330
-\lst@lostspace=\dimen307
-\lst@width=\dimen308
-\lst@newlines=\count331
-\lst@lineno=\count332
-\lst@maxwidth=\dimen309
+\lst@length=\count332
+\lst@currlwidth=\dimen314
+\lst@column=\count333
+\lst@pos=\count334
+\lst@lostspace=\dimen315
+\lst@width=\dimen316
+\lst@newlines=\count335
+\lst@lineno=\count336
+\lst@maxwidth=\dimen317
 
 (C:\Users\carty\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count333
-\lst@skipnumbers=\count334
+\c@lstnumber=\count337
+\lst@skipnumbers=\count338
 \lst@framebox=\box75
 )
 (C:\Users\carty\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
 Package: listings 2023/02/27 1.9 (Carsten Heinz)
-\c@hyp=\count335
 
 (C:\Users\carty\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2023-03-30 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count336
+\l__color_backend_stack_int=\count339
 \l__pdf_internal_box=\box76
-) (PS01.aux)
-\openout1 = `PS01.aux'.
+) (PS01_answersJZ.aux)
+\openout1 = `PS01_answersJZ.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
 LaTeX Font Info:    ... okay on input line 67.
@@ -881,16 +907,16 @@ LaTeX Font Info:    ... okay on input line 67.
 (C:\Users\carty\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count337
-\scratchdimen=\dimen310
+\scratchcounter=\count340
+\scratchdimen=\dimen318
 \scratchbox=\box77
-\nofMPsegments=\count338
-\nofMParguments=\count339
+\nofMPsegments=\count341
+\nofMParguments=\count342
 \everyMPshowfont=\toks53
-\MPscratchCnt=\count340
-\MPscratchDim=\dimen311
-\MPnumerator=\count341
-\makeMPintoPDFobject=\count342
+\MPscratchCnt=\count343
+\MPscratchDim=\dimen319
+\MPnumerator=\count344
+\makeMPintoPDFobject=\count345
 \everyMPtoPDFconversion=\toks54
 )
 (C:\Users\carty\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -917,11 +943,23 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Package xypdf Info: Line width: 0.47998pt on input line 67.
 Package hyperref Info: Link coloring OFF on input line 67.
 
-(PS01.out) (PS01.out)
+(PS01_answersJZ.out) (PS01_answersJZ.out)
 \@outlinefile=\write7
-\openout7 = `PS01.out'.
+\openout7 = `PS01_answersJZ.out'.
 
-\c@lstlisting=\count343
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count346
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+
+ []
 
 (C:\Users\carty\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
@@ -933,46 +971,79 @@ File: lstlang2.sty 2023/02/27 1.9 listings language file
 File: lstlang3.sty 2023/02/27 1.9 listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 84.
+nput line 82.
 
-(PS01.R)
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
+(PS01_answersJZ.R
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 4
+0.
 
- []
+(C:\Users\carty\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
+File: omlcmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 40.
+)
+LaTeX Font Info:    Trying to load font information for OMS+cmtt on input line 
+92.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 92.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbraceleft' on input line 92.
 
- []
+(PS01_answersJZ.R [1
 
-[1
+{C:/Users/carty/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}])
+<plot_example.pdf, id=24, 505.89pt x 505.89pt>
+File: plot_example.pdf Graphic file (type pdf)
+<use plot_example.pdf>
+Package pdftex.def Info: plot_example.pdf  used on input line 123.
+(pdftex.def)             Requested size: 352.31625pt x 352.32199pt.
+ (PS01_answersJZ.R [2 <./plot_example.pdf>]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 6
+1.
 
-{C:/Users/carty/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (PS01.R)
-[2] (PS01.aux)
-Package rerunfilecheck Info: File `PS01.out' has not changed.
+(C:\Users\carty\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
+File: omscmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 61.
+)
+(regression_output1.tex) [3] (PS01_answersJZ.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package rerunfilecheck Info: File `PS01_answersJZ.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26977 strings out of 476331
- 479698 string characters out of 5787766
- 1868660 words of memory out of 5000000
- 46923 multiletter control sequences out of 15000+600000
- 522738 words of font info for 76 fonts, out of 8000000 for 9000
+ 28470 strings out of 476331
+ 509289 string characters out of 5787766
+ 1957660 words of memory out of 5000000
+ 48377 multiletter control sequences out of 15000+600000
+ 523211 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,6n,89p,3238b,1892s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,10n,89p,3248b,2131s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\carty\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
-1200.pk><C:/Users/carty/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+1000.pk><C:/Users/carty/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx12.pfb><C:/Users/carty/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmmi12.pfb><C:/Users/carty/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb><C:/Users/carty/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/carty/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/carty/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/carty/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/car
-ty/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on PS01.pdf (2 pages, 108598 bytes).
+ic/amsfonts/cm/cmitt10.pfb><C:/Users/carty/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/carty/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/carty/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/carty/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/carty/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/
+carty/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:
+/Users/carty/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.
+pfb><C:/Users/carty/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb><C:/Users/carty/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmsy8.pfb><C:/Users/carty/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmti12.pfb><C:/Users/carty/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on PS01_answersJZ.pdf (3 pages, 169116 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 9 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 123 PDF objects out of 1000 (max. 8388607)
+ 24 named destinations out of 1000 (max. 500000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

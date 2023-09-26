@@ -8,7 +8,7 @@
 getwd()
 
 # Set working directory 
-setwd("/Users/carty/OneDrive/Documents/Stats1 Fall Prep")
+setwd("/Users/carty/OneDrive/Documents/GitHub/StatsI_Fall2023/problemSets/PS01/my_answers")
 getwd()
 
 # remove objects
@@ -122,26 +122,25 @@ upper_90_n <- qnorm(0.95,
 
 # First step: calculate the standard error
 
-sd(y) / sqrt(length(y))  # Variability, standard error
+standard_error <-  sd(y) / sqrt(length(y))  # Variability, standard error
+
+# Find T statistic
+
+t_statistic <- abs((mean(y) - 100) / standard_error)
+
+# Find probability score
+
+prob <- pt(t_statistic, (length(y)-1))
+
+# p_value = 0.7215383
+
+# Therefore we have evidence to accept the null hypothesis, as prob > 0.05
+
+# METHOD 2
 
 # calculate the t_score for a one-sided test, with confidence level of 0.05
 
-#Right side critical value 95% confidence level, as looking to see if score is higher −
-
-t_score <- abs(qt(0.05, df=(length(y)-1)))
-
-#Test score = 1.710882, df = length((y)-1)
-
-
-#find one-tail p-value with right sided test
-
-P_value <- pt(q = 1.710882, df = (length(y)-1), lower.tail = FALSE)
-
-#The p-value of 0.05000001 is approximately equal to the significance level of 0.05
-
-# for this reason, we found evidence that we can reject the null hypothesis, as with repeated sampling, 
-# we can expect the p-value to fall within the area of significance
-
+t.test(y, mu = 100, conf.level = 0.05, alternative = "greater")
 
 # Update Histogram 
 

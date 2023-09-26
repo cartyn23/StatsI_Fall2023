@@ -8,7 +8,7 @@
 getwd()
 
 # Set working directory 
-setwd("/Users/carty/OneDrive/Documents/Stats1 Fall Prep")
+setwd("/Users/carty/OneDrive/Documents/GitHub/StatsI_Fall2023/problemSets/PS01/my_answers")
 getwd()
 
 # remove objects
@@ -162,3 +162,41 @@ abline(v=upper_90,col="black",lty="dashed")
 #####################
 
 expenditure <- read.table("https://raw.githubusercontent.com/ASDS-TCD/StatsI_Fall2023/main/datasets/expenditure.txt", header=T)
+
+#Please plot the relationships among Y, X1, X2, and X3 ? What are the correlations
+# among them (you just need to describe the graph and the relationships among them)?
+
+#Please plot the relationship between Y and Region? On average, which region has the
+#highest per capita expenditure on housing assistance?
+
+#Please plot the relationship between Y and X1 ? Describe this graph and the relationship. #Reproduce the above graph including one more variable Region and display
+#different regions with different types of symbols and colors
+
+plot(expenditure$Y, expenditure$X1)
+plot(expenditure$Y, expenditure$X2)
+plot(expenditure$Y, expenditure$X3)
+plot(expenditure$X1, expenditure$X2)
+plot(expenditure$X1, expenditure$X3)
+plot(expenditure$X2, expenditure$X3)
+
+cor(expenditure$Y, expenditure$X1)
+cor(expenditure$Y, expenditure$X2)
+cor(expenditure$Y, expenditure$X3)
+cor(expenditure$X1, expenditure$X2)
+cor(expenditure$X1, expenditure$X3)
+cor(expenditure$X2, expenditure$X3)
+
+# the strongest associations observed are between per capital expenditure on shelters/housing assistance in the state (Y) 
+# and per capita personal income in state (X1) and also the number of people living in urban areas in the state (X3)
+
+# the weakest associations are between the per capital personal income in state (X1) and number of residents per 100,00 that are 
+# "financially secure" in state (X2), as well as between number of residents that are financially secure (X2)
+#and the number of people residing in urban areas of the state
+
+
+#Please plot the relationship between Y and Region? On average, which region has the
+#highest per capita expenditure on housing assistance?
+
+plot(expenditure$Y, expenditure$Region)
+
+y_region <- lm(expenditure$Y~expenditure$Region, data=expenditure)
