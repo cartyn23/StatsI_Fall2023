@@ -31,6 +31,9 @@ pkgTest <- function(pkg){
   sapply(pkg,  require,  character.only = TRUE)
 }
 
+install.packages("ggplot2")       
+install.packages("GGally")
+
 # here is where you load any necessary packages
 # ex: stringr
 # lapply(c("stringr"),  pkgTest)
@@ -173,8 +176,7 @@ region <-  expenditure$Region
 factor_region <- factor(region, levels = c("1", "2", "3", "4"))
 levels(factor_region) <- c("Northeast", "North Central", "South", "West")
 
-install.packages("ggplot2")       
-install.packages("GGally")
+
 library("ggplot2")                     
 library("GGally")
 
