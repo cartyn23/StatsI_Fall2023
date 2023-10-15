@@ -97,12 +97,107 @@
 	
 	\item [(a)]
 	Calculate the $\chi^2$ test statistic by hand/manually (even better if you can do "by hand" in \texttt{R}).\\
-	\vspace{7cm}
-	
+
+\section*{Answers 1 (a)}
+\noindent Statistical independence: Two variables are statistically independent if the conditional distributions of the population are identical across categories.\\
+
+\noindent H0: The variables are statistically independent\\
+Ha: The variables are statistically dependent\\
+
+\noindent We are going to calculate a test-statistic (the $\chi^2$ statistic) that is distributed according to the $\chi^2$ distribution \\
+
+\textbf{f observed} = O = observed frequency = the raw count \\
+
+\textbf{f expected} = E = what we would expect for independent sample \\ 
+
+\noindent If H0 is true, then we would expect f observed = f expected \\
+
+\textbf{Table 1: Observed Values}
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{l | c c c c }
+		& Not Stopped & Bribe requested & Stopped/given warning & Total \\
+		\\[-1.8ex] 
+		\hline \\[-1.8ex]
+		Upper class & 14 & 6 & 7 & 27 \\
+		Lower class & 7 & 7 & 1 & 15 \\
+		\hline
+		Total & 21 & 13 & 8 & 42 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\newpage
+
+\textbf{Table 2: Expected Values} \\
+
+To calculate Expected Values: (Raw Total/ Grand Total ) * Column Total \\ 
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{l | c c c c }
+		& Not Stopped & Bribe requested & Stopped/given warning & Total \\
+		\\[-1.8ex] 
+		\hline \\[-1.8ex]
+		Upper class & 13.5 & 8.357 & 5.142 & 27 \\
+		Lower class & 7.5 & 4.642 & 2.857 & 15 \\
+		\hline
+		Total & 21 & 13 & 8 & 42 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\textbf{Calculate the $\chi^2$ Test Statistic by hand}
+
+$$\chi^2 = \sum \frac {(O - E)^2}{E}$$ \\
+
+Inserting values into the formula and adding each total gives you: \\
+
+0.0185 + 0.6647 + 0.671 + 0.0333 + 1.198 + 1.207 \\
+
+\textbf{$\chi^2$ = 3.7925 } \\
+
+\section*{Answers 1 (b)}
+
 	\item [(b)]
 	Now calculate the p-value from the test statistic you just created (in \texttt{R}).\footnote{Remember frequency should be $>$ 5 for all cells, but let's calculate the p-value here anyway.}  What do you conclude if $\alpha = 0.1$?\\
+
+Formula in R: 
+
+pchisq($\chi^2$, df = (rows-1)(columns-1), lower.tail=FALSE) \\
+
+\begin{verbatim}
+	#OBSERVED VALUES
+	Not_Stopped <- c(14,7)
+	Bribed <- c(6,7)
+	Stopped_Given_Warning <- c(7,1)
 	
-	\newpage
+	df = data.frame (Not_Stopped, Bribed, Stopped_Given_Warning )
+	row.names(df) <- c("Upper Class", "Lower Class")
+	
+	#EXPECTED VALUES
+	Not_Stopped_E <- c(13.5,7.5)
+	Bribed_E <- c(8.357,4.642)
+	Stopped_Given_Warning_E <- c(5.142, 2.857)
+	
+	df_E = data.frame (Not_Stopped_E, Bribed_E, Stopped_Given_Warning_E )
+	row.names(df_E) <- c("Upper Class", "Lower Class")
+	
+	chi_test_n <- chisq.test(df, df_E)
+	chi_test_n
+	
+	 Chi_Result <- 3.7925
+	 
+	 pchisq(Chi_Result, df = 2, lower.tail=FALSE)
+	 
+	 P <- 0.1501306
+\end{verbatim}
+
+The P-Value is greater than $\alpha = 0.1$ . That being the case, we have evidence to accept the null hypothesis, and conclude that the two distributions are statistically independent in this instance, with a confidence level of $\alpha = 0.90 . \\
+
+\section*{Answers 1 (c)}
+
 	\item [(c)] Calculate the standardized residuals for each cell and put them in the table below.
 	\vspace{1cm}
 	
@@ -112,18 +207,32 @@
 			& Not Stopped & Bribe requested & Stopped/given warning \\
 			\\[-1.8ex] 
 			\hline \\[-1.8ex]
-			Upper class  &  &  &  \\
+			Upper class & 0.3220306 & -1.641957  & 1.523026  \\
 			\\
-			Lower class &  &   &   \\
+			Lower class &   -0.3220306 & 1.641957 & -1.523026   \\
 			
 		\end{tabular}
-	\end{table}
+	\end{table} 
+
+
+Formula used in R :
+
+\begin{verbatim}
+	chi_test_n$stdres
+\end{verbatim}
+
+\section*{Answers 1 (d)}
+
+	\item [(d)] How might the standardized residuals help you interpret the results?  \\
 	
-	
-	\vspace{7cm}
-	\item [(d)] How might the standardized residuals help you interpret the results?  
+\textbf{Interpretation:} The upper class were stopped less than the lower class, whilst a bribe was requested more from the lower class than the upper class. Those stopped or given a warning were more likely to be from the upper class. 
 	
 \end{enumerate}
+\newpage
+
+
+
+
 \newpage
 
 \section*{Question 2: Economics}
@@ -141,13 +250,74 @@ Chattopadhyay and Duflo were interested in whether women promote different polic
 
 \newpage
 \begin{enumerate}
-	\item [(a)] State a null and alternative (two-tailed) hypothesis. 
+	\item [(a)] State a null and alternative (two-tailed) hypothesis. \\
 	
-	\vspace{6cm}
-	\item [(b)] Run a bivariate regression to test this hypothesis in \texttt{R} (include your code!).
+\section*{Answers 2 (a)}	
 	
-	\vspace{6cm}
-	\item [(c)] Interpret the coefficient estimate for reservation policy. 
+	The null hypothesis is that there is no association between the reservation policy in place in each GP for female leaders and the number of new or repaired drinking water facilities in the village. In that case the slope will = 0. \\
+	
+	The alternative hypothesis states there is a correlation between the reservation policy in place for women leaders in a district (either positive or negative) and the water policies in place. In that case the slope will be greater or less than 0. \\
+	
+	
+	
+	\item [(b)] Run a bivariate regression to test this hypothesis in \texttt{R} (include your code!). \\
+	
+	\section*{Answers 2 (b)}
+	
+	Looking at the data, there is a high correlation (0.8976907) between GPs that are reserved for women, and the number of females in GPs. 
+	
+	\begin{verbatim}
+		cor(data_India$reserved ==1,data_India$female ==1)
+	\end{verbatim}
+	
+That being the case, this analysis will  run a regression analysis comparing the GPs with female representation and the number of new or repaired water facilities.  
+	
+	\begin{verbatim}
+
+data_female <- (data_India$female == 1)
+data_male <- (data_India$female == 0)
+
+model_water <- summary(lm(data_India$water~data_female))
+print(model_water)
+
+
+Call:
+lm(formula = data_India$water ~ data_female)
+
+Residuals:
+Min     1Q Median     3Q    Max 
+-22.68 -14.78  -7.81   2.29 317.32 
+
+Coefficients:
+Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       14.813      2.382   6.220 1.56e-09 ***
+data_femaleTRUE    7.864      3.838   2.049   0.0413 *  
+---
+Signif. codes:  
+0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 33.51 on 320 degrees of freedom
+Multiple R-squared:  0.01295,	Adjusted R-squared:  0.009867 
+F-statistic: 4.199 on 1 and 320 DF,  p-value: 0.04126
+
+	\end{verbatim}
+	
+We can also plot the association 
+
+	\begin{verbatim}
+plot(data_India$water ~ data_female, col = "blue")
+abline(coef(lm(data_India$water~data_female)), col = "green")
+abline(coef(lm(data_India$water~data_male)), col = "purple")
+	\end{verbatim}
+	
+\includegraphics{Rplot_just_green}
+
+	\item [(c)] Interpret the coefficient estimate for reservation policy. \\
+	
+	\textbf{Answer:} The slope is equal to 7.864, indicating a correlation between female leaders and water policy. 
+	
+	The P-Value is less than 0.05, so the test can be considered significant, and we have evidence to reject the null hypothesis in this instance.
+	
 \end{enumerate}
 
 \end{document}
