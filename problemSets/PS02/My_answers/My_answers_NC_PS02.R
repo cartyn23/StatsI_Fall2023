@@ -73,11 +73,25 @@ stdnew_residuals
 data_India <- read.csv("https://raw.githubusercontent.com/kosukeimai/qss/master/PREDICTION/women.csv")
 summary(data_India)
 
-#We can see that there is a very high correlation (0.8976907) between those GPs that are reserved for women,
-#and the number of females in those GPs.
+#Looking at the GPs where the reservation policy is in place, 
+#we can see that there are female candidates in all of them. 
+# In only another 16 GPs, are there female candidates in unreserved GPs.
 
-cor(data_India$reserved ==1,data_India$female ==1)
-                   
+length(which(data_India$reserved == 1)) #there arr 108 GPs with a reservation policy in place
+length(which(data_India$reserved == 0)) #there are 214 GPs without a reservation policy in place
+
+#all the reserved states have female candidates.
+length(which(data_India$reserved == 1 & data_India$female == 1))  
+
+#another 16 out of 214 remaining states have female candidates
+data_India$matched <- ifelse(data_India$reserved == data_India$female, "yes" , "no" )
+length(data_India$matched)
+
+num_no <- length(which(data_India$matched == "no"))
+num_no
+
+
+
 # Answer 2 (part 2)
 
 #Run a bivariate regression to test this hypothesis in R (include your code!).

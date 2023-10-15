@@ -158,6 +158,8 @@ Inserting values into the formula and adding each total gives you: \\
 
 \textbf{$\chi^2$ = 3.7925 } \\
 
+\newpage
+
 \section*{Answers 1 (b)}
 
 	\item [(b)]
@@ -194,7 +196,10 @@ pchisq($\chi^2$, df = (rows-1)(columns-1), lower.tail=FALSE) \\
 	 P <- 0.1501306
 \end{verbatim}
 
-The P-Value is greater than $\alpha = 0.1$ . That being the case, we have evidence to accept the null hypothesis, and conclude that the two distributions are statistically independent in this instance, with a confidence level of $\alpha = 0.90 . \\
+The P-Value is greater than $\alpha = 0.1$ . That being the case, we have evidence to accept the null hypothesis, and conclude that the two distributions are statistically independent in this instance, with a confidence level of $\alpha = 0.90$ . \\
+
+\newpage
+
 
 \section*{Answers 1 (c)}
 
@@ -220,6 +225,8 @@ Formula used in R :
 \begin{verbatim}
 	chi_test_n$stdres
 \end{verbatim}
+
+\newpage
 
 \section*{Answers 1 (d)}
 
@@ -260,17 +267,35 @@ Chattopadhyay and Duflo were interested in whether women promote different polic
 	
 	
 	
-	\item [(b)] Run a bivariate regression to test this hypothesis in \texttt{R} (include your code!). \\
+
+	
+	\newpage
 	
 	\section*{Answers 2 (b)}
 	
-	Looking at the data, there is a high correlation (0.8976907) between GPs that are reserved for women, and the number of females in GPs. 
+		\item [(b)] Run a bivariate regression to test this hypothesis in \texttt{R} (include your code!). \\
+		
+	First, looking at the 108 GPs where the reservation policy is in place, we can see that there are female leaders in all of them. In the 214 unreserved GPs, only 16 GPs have female leaders. This appears to show a direct link between the reservation policy and number of female candidates.
 	
 	\begin{verbatim}
-		cor(data_India$reserved ==1,data_India$female ==1)
+length(which(data_India$reserved == 1)) 
+#there arr 108 GPs with a reservation policy in place
+length(which(data_India$reserved == 0)) 
+#there are 214 GPs without a reservation policy in place
+
+#all the reserved states have female candidates.
+length(which(data_India$reserved == 1 & data_India$female == 1))  
+
+#another 16 out of 214 remaining states have female candidates
+data_India$matched <- ifelse(data_India$reserved == data_India$female,"yes","no")
+length(data_India$matched)
+
+num_no <- length(which(data_India$matched == "no"))
+num_no #there are 16 of the 214 unreserved states with female candidates.
+
 	\end{verbatim}
 	
-That being the case, this analysis will  run a regression analysis comparing the GPs with female representation and the number of new or repaired water facilities.  
+That being the case, this analysis will  run a regression analysis to look at the association between the GPs with female representation and the number of new or repaired water facilities.  
 	
 	\begin{verbatim}
 
@@ -311,6 +336,12 @@ abline(coef(lm(data_India$water~data_male)), col = "purple")
 	\end{verbatim}
 	
 \includegraphics{Rplot_just_green}
+
+
+
+\newpage
+
+\section*{Answers 2 (c)}
 
 	\item [(c)] Interpret the coefficient estimate for reservation policy. \\
 	

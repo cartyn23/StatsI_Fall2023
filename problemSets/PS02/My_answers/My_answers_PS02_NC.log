@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.8)  15 OCT 2023 14:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.8)  15 OCT 2023 22:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -989,110 +989,96 @@ Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
-
- []
-
 [3]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.198 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.198 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra }, or forgotten \endgroup.
-\@par ... \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.198 
-      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+ []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
 
  []
 
 [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 239--240
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
  []
 
-<women_desc.png, id=47, 750.805pt x 300.12125pt>
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
+
+ []
+
+<women_desc.png, id=51, 750.805pt x 300.12125pt>
 File: women_desc.png Graphic file (type png)
 <use women_desc.png>
-Package pdftex.def Info: women_desc.png  used on input line 248.
+Package pdftex.def Info: women_desc.png  used on input line 255.
 (pdftex.def)             Requested size: 516.73338pt x 206.5664pt.
 
-Overfull \hbox (46.97836pt too wide) in paragraph at lines 248--249
+Overfull \hbox (46.97836pt too wide) in paragraph at lines 255--256
  [][] 
  []
 
-[6 <./women_desc.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
+[7 <./women_desc.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--258
+Underfull \hbox (badness 10000) in paragraph at lines 264--265
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
+Underfull \hbox (badness 10000) in paragraph at lines 266--267
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
-
+Overfull \hbox (59.79492pt too wide) in paragraph at lines 296--296
+ []\OT1/cmtt/m/n/12 data_India$matched <- ifelse(data_India$reserved == data_In
+dia$female,"yes","no")[] 
  []
 
-[7]
-<Rplot_just_green.png, id=61, 385.44pt x 220.57407pt>
+
+Overfull \hbox (10.3949pt too wide) in paragraph at lines 296--296
+ []\OT1/cmtt/m/n/12 num_no #there are 16 of the 214 unreserved states with fema
+le candidates.[] 
+ []
+
+[9]
+<Rplot_just_green.png, id=69, 385.44pt x 220.57407pt>
 File: Rplot_just_green.png Graphic file (type png)
 <use Rplot_just_green.png>
-Package pdftex.def Info: Rplot_just_green.png  used on input line 313.
+Package pdftex.def Info: Rplot_just_green.png  used on input line 338.
 (pdftex.def)             Requested size: 385.43906pt x 220.57352pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 315--316
+ [10 <./Rplot_just_green.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
 
  []
 
-[8 <./Rplot_just_green.png>] (My_answers_PS02_NC.aux)
+[11] (My_answers_PS02_NC.aux)
 Package rerunfilecheck Info: File `My_answers_PS02_NC.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26023 strings out of 476331
- 470247 string characters out of 5787766
+ 26026 strings out of 476331
+ 470267 string characters out of 5787766
  1859660 words of memory out of 5000000
  45976 multiletter control sequences out of 15000+600000
  523689 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,8n,89p,3252b,687s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,8n,89p,3252b,671s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\carty\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1200.pk><C:/Users/carty/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx12.pfb><C:/Users/carty/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -1108,9 +1094,9 @@ fb><C:/Users/carty/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmsy10.pfb><C:/Users/carty/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
 sfonts/cm/cmti10.pfb><C:/Users/carty/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmtt12.pfb>
-Output written on My_answers_PS02_NC.pdf (8 pages, 193652 bytes).
+Output written on My_answers_PS02_NC.pdf (11 pages, 196223 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
- 13 named destinations out of 1000 (max. 500000)
+ 138 PDF objects out of 1000 (max. 8388607)
+ 16 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
