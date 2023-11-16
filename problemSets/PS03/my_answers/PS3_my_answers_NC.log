@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.8)  16 NOV 2023 13:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.8)  16 NOV 2023 16:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -962,14 +962,13 @@ File: omlcmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 86.
 )
-<vote_share_incumbent_scatter.png, id=25, 505.89pt x 505.89pt>
+<vote_share_incumbent_scatter.png, id=25, 436.5108pt x 176.3388pt>
 File: vote_share_incumbent_scatter.png Graphic file (type png)
 <use vote_share_incumbent_scatter.png>
 Package pdftex.def Info: vote_share_incumbent_scatter.png  used on input line 1
 59.
-(pdftex.def)             Requested size: 371.1033pt x 371.11064pt.
+(pdftex.def)             Requested size: 371.1033pt x 149.91827pt.
 
-[3 <./vote_share_incumbent_scatter.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
@@ -979,7 +978,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
-[4]
+[3 <./vote_share_incumbent_scatter.png>] [4]
 Underfull \hbox (badness 10000) in paragraph at lines 192--193
 
  []
@@ -1005,11 +1004,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 252--253
  []
 
 (PS3_my_answers_NC.R)
-<vote_share_pres_scatter.png, id=63, 437.2335pt x 176.3388pt>
+<vote_share_pres_scatter.png, id=63, 436.5108pt x 176.3388pt>
 File: vote_share_pres_scatter.png Graphic file (type png)
 <use vote_share_pres_scatter.png>
 Package pdftex.def Info: vote_share_pres_scatter.png  used on input line 262.
-(pdftex.def)             Requested size: 465.06004pt x 187.56668pt.
+(pdftex.def)             Requested size: 465.06004pt x 187.87343pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1060,11 +1059,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 357--358
  []
 
 (PS3_my_answers_NC.R)
-<vote_share2_scatter.png, id=98, 437.2335pt x 176.3388pt>
+<vote_share2_scatter.png, id=98, 436.5108pt x 176.3388pt>
 File: vote_share2_scatter.png Graphic file (type png)
 <use vote_share2_scatter.png>
 Package pdftex.def Info: vote_share2_scatter.png  used on input line 367.
-(pdftex.def)             Requested size: 465.06004pt x 187.56668pt.
+(pdftex.def)             Requested size: 465.06004pt x 187.87343pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1084,36 +1083,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 393--394
 
  []
 
-[10 <./vote_share2_scatter.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 404--405
+[10 <./vote_share2_scatter.png>] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 422--423
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--411
+Underfull \hbox (badness 10000) in paragraph at lines 427--429
 
  []
 
-[11] (PS3_my_answers_NC.R)
-<residuals_scatter.png, id=128, 437.2335pt x 176.3388pt>
+[12] (PS3_my_answers_NC.R)
+<residuals_scatter.png, id=132, 436.5108pt x 176.3388pt>
 File: residuals_scatter.png Graphic file (type png)
 <use residuals_scatter.png>
-Package pdftex.def Info: residuals_scatter.png  used on input line 456.
-(pdftex.def)             Requested size: 465.06004pt x 187.56668pt.
+Package pdftex.def Info: residuals_scatter.png  used on input line 474.
+(pdftex.def)             Requested size: 465.06004pt x 187.87343pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 465--466
+Underfull \hbox (badness 10000) in paragraph at lines 483--484
 
  []
 
-[12 <./residuals_scatter.png>] [13] (PS3_my_answers_NC.aux)
+[13 <./residuals_scatter.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 492--493
+
+ []
+
+
+Overfull \hbox (96.84494pt too wide) in paragraph at lines 514--514
+ []\OT1/cmtt/m/n/12 multi_model <- lm(inc.sub$voteshare ~ inc.sub$difflog + inc
+.sub$presvote, data=inc.sub)[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 521--522
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 524--525
+
+ []
+
+[14] (PS3_my_answers_NC.aux)
 Package rerunfilecheck Info: File `PS3_my_answers_NC.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  27140 strings out of 476331
- 482857 string characters out of 5787766
+ 482851 string characters out of 5787766
  1941660 words of memory out of 5000000
- 46987 multiletter control sequences out of 15000+600000
+ 46986 multiletter control sequences out of 15000+600000
  523033 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,6n,89p,3251b,2220s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1123,18 +1143,20 @@ Here is how much of TeX's memory you used:
 amsfonts/cm/cmbx12.pfb><C:/Users/carty/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/amsfonts/cm/cmmi10.pfb><C:/Users/carty/AppData/Local/Programs/MiKTeX/f
 onts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/carty/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/carty/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/carty/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/cart
-y/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Us
-ers/carty/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb
-><C:/Users/carty/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mr8.pfb><C:/Users/carty/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb><C:/Users/carty/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmtt12.pfb>
-Output written on PS3_my_answers_NC.pdf (13 pages, 1022852 bytes).
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/carty/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/carty/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/cart
+y/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Us
+ers/carty/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pf
+b><C:/Users/carty/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmr17.pfb><C:/Users/carty/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmr6.pfb><C:/Users/carty/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmr8.pfb><C:/Users/carty/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb><C:/Users/carty/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on PS3_my_answers_NC.pdf (14 pages, 741611 bytes).
 PDF statistics:
- 236 PDF objects out of 1000 (max. 8388607)
- 96 named destinations out of 1000 (max. 500000)
+ 251 PDF objects out of 1000 (max. 8388607)
+ 97 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -129,7 +129,7 @@
 		-0.26832 -0.05345 -0.00377  0.04780  0.32749 
 		
 		Coefficients:
-		Estimate Std. Error t value Pr(>|t|)    
+						Estimate Std. Error t value Pr(>|t|)    
 		(Intercept)     0.579031   0.002251  257.19   <2e-16 ***
 		inc.sub$difflog 0.041666   0.000968   43.04   <2e-16 ***
 		---
@@ -235,7 +235,7 @@ vote_residuals
 		-0.32196 -0.07407 -0.00102  0.07151  0.42743 
 		
 		Coefficients:
-		Estimate Std. Error t value Pr(>|t|)    
+		               Estimate Std. Error t value Pr(>|t|)    
 		(Intercept)     0.507583   0.003161  160.60   <2e-16 ***
 		inc.sub$difflog 0.023837   0.001359   17.54   <2e-16 ***
 		---
@@ -340,7 +340,7 @@ vote_residuals
 		-0.27330 -0.05888  0.00394  0.06148  0.41365 
 		
 		Coefficients:
-		Estimate Std. Error t value Pr(>|t|)    
+		                Estimate Std. Error t value Pr(>|t|)    
 		(Intercept)      0.441330   0.007599   58.08   <2e-16 ***
 		inc.sub$presvote 0.388018   0.013493   28.76   <2e-16 ***
 		---
@@ -390,9 +390,27 @@ vote_residuals
 
 \noindent On average, with every one unit of electoral success for incumbent party, we can expect the vote share for the President's Party to increase by 0.388 scale points.\\
 
-With regard to association, the slope is positive, indicating a positive association. The slope does not however tell us the strength of the association. \\
+With regard to association, the slope is positive, indicating a positive association, and we have evidence to accept the alternative hypothesis. The estimated coefficient is statistically differentiable from zero at the $\alpha=0.05$ level because the p-value $<$ 0.05 ($\approx $2e-16). The slope does not however tell us the strength of the association. \\
 
-If we look at the $R^2$ value, it is 0.2058, indicating a weak positive relationship between the two variables.
+To do so we can look at the correlation estimate, which comes to 0.4536672, indicating a moderate strength linear association between the two variables .
+
+	\begin{verbatim}
+correlation <- cor.test(inc.sub$presvote, inc.sub$voteshare)
+
+	Pearson's product-moment correlation
+
+data:  inc.sub$presvote and inc.sub$voteshare
+t = 28.757, df = 3191, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+0.4256781 0.4807891
+sample estimates:
+cor 
+0.4536672 
+	
+\end{verbatim}
+
+If we look at the $R^2$ value, which is a related measure of association, it is 0.2058, indicating that X can explain 20 per cent of the variability of Y. 
 
 
 
@@ -419,28 +437,28 @@ $$H_A: \beta \neq 0$$
 Step 1: Run the regression ...
 
 			\begin{verbatim}
-model_residuals <- lm(pres_residuals ~ vote_residuals, data=inc.sub)
+model_residuals <- lm(vote_residuals ~ pres_residuals, data=inc.sub)
 
 summary(model_residuals)
 
 
 Call:
-lm(formula = pres_residuals ~ vote_residuals, data = inc.sub)
+lm(formula = vote_residuals ~ pres_residuals, data = inc.sub)
 
 Residuals:
 Min       1Q   Median       3Q      Max 
--0.32618 -0.07532 -0.00485  0.06698  0.45288 
+-0.25928 -0.04737 -0.00121  0.04618  0.33126 
 
 Coefficients:
-Estimate Std. Error t value Pr(>|t|)    
-(Intercept)    -2.874e-18  1.928e-03    0.00        1    
-vote_residuals -2.059e-01  2.188e-02   -9.41   <2e-16 ***
+               Estimate Std. Error t value Pr(>|t|)    
+(Intercept)    -5.934e-18  1.299e-03    0.00        1    
+pres_residuals  2.569e-01  1.176e-02   21.84   <2e-16 ***
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 0.1089 on 3191 degrees of freedom
-Multiple R-squared:  0.027,	Adjusted R-squared:  0.02669 
-F-statistic: 88.54 on 1 and 3191 DF,  p-value: < 2.2e-16
+Residual standard error: 0.07338 on 3191 degrees of freedom
+Multiple R-squared:   0.13,	Adjusted R-squared:  0.1298 
+F-statistic:   477 on 1 and 3191 DF,  p-value: < 2.2e-16
 
 		\end{verbatim}
 		
@@ -462,7 +480,7 @@ The slope is equal to -2.059e-01. So we do not have enough evidence to reject th
 		{\large 			$$\hat{Y}_i = \hat{\alpha} +  \hat{\beta}X_i $$}
 		
 		
-		{ 			$$\hat{Y}_i =  -2.874e-18 +  -2.059e-01 * \text{(Residuals from part b)} $$} \\
+		{ 			$$\hat{Y}_i =  -5.934e-18 +  2.569e-01  \text{(Residuals from part b)} $$} \\
 		
 	\end{enumerate}
 	
@@ -471,9 +489,42 @@ The slope is equal to -2.059e-01. So we do not have enough evidence to reject th
 \section*{Question 5}
 \noindent What if the incumbent's vote share is affected by both the president's popularity and the difference in spending between incumbent and challenger? 
 	\begin{enumerate}
-		\item Run a regression where the outcome variable is the incumbent's \texttt{voteshare} and the explanatory variables are \texttt{difflog} and \texttt{presvote}.	\vspace{5cm}
-		\item Write the prediction equation.	\vspace{5cm}
-		\item What is it in this output that is identical to the output in Question 4? Why do you think this is the case?
+		\item Run a regression where the outcome variable is the incumbent's \texttt{voteshare} and the explanatory variables are \texttt{difflog} and \texttt{presvote}.	\\
+		
+		Run the regression in R ....
+					\begin{verbatim}
+		multi_model <- lm(inc.sub$voteshare ~ inc.sub$difflog + inc.sub$presvote, data=inc.sub)
+		summary(multi_model)
+		
+		Residuals:
+		Min       1Q   Median       3Q      Max 
+		-0.25928 -0.04737 -0.00121  0.04618  0.33126 
+		
+		Coefficients:
+						Estimate    Std. Error t value Pr(>|t|)    
+		(Intercept)      0.4486442  0.0063297   70.88   <2e-16 ***
+		inc.sub$difflog  0.0355431  0.0009455   37.59   <2e-16 ***
+		inc.sub$presvote 0.2568770  0.0117637   21.84   <2e-16 ***
+		---
+		Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+		
+		Residual standard error: 0.07339 on 3190 degrees of freedom
+		Multiple R-squared:  0.4496,	Adjusted R-squared:  0.4493 
+		F-statistic:  1303 on 2 and 3190 DF,  p-value: < 2.2e-16
+					\end{verbatim}
+					
+		\item Write the prediction equation.	
+		
+		{\large 			$$ {Y}_i = \hat{\alpha} +  {\beta_1}X_i + {\beta_2}X_{2_i} $$}
+		
+		
+		{ $$ {Y}_i =  0.4486442 + 0.0355431(X_i) + 0.2568770 (X_{2_i} ) $$  } \\
+		
+		
+		\item What is it in this output that is identical to the output in Question 4? Why do you think this is the case? \\
+		
+		The value of Residual Standard Error is 0.073 in both cases. That indicates that ...
+		
 	\end{enumerate}
 
 \end{document}
