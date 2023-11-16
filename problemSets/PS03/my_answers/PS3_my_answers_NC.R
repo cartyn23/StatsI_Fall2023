@@ -236,7 +236,7 @@ scatter_vote
 
 # Save the residuals of the model in a separate object
 
-vote_residuals <- model_vote$residuals
+new_vote_residuals <- model_vote$residuals
 
 # (3.d.) Write the prediction equation ----
 
@@ -263,7 +263,7 @@ cor.test(inc.sub$presvote, inc.sub$voteshare)
 
 # run the regression
 
-model_residuals <- lm(pres_residuals ~ vote_residuals, data=inc.sub)
+model_residuals <- lm(vote_residuals ~ pres_residuals, data=inc.sub)
 
 # we then run a summary to check the coefficients
 
@@ -275,24 +275,24 @@ summary(model_residuals)
 # Note that the estimated coefficient is statistically differentiable from
 # zero at the α = 0.05 level because the p-value < 0.05 (≈2e-16).
 
-# (3.b.) Descriptive analysis -------
+# (4.b.) Descriptive analysis -------
 
 # Scatter plot
 scatter_residuals <-
   ggplot(data = inc.sub,
-         mapping = aes(x = vote_residuals, 
-                       y = pres_residuals)) +
+         mapping = aes(x = pres_residuals, 
+                       y = vote_residuals)) +
   geom_point() +
-  labs(x = "Vote Residuals", 
-       y = "Presidntial Party candidate Residuals") +
+  labs(x = "Presidntial Party candidate Residuals", 
+       y = "Vote Residuals") +
   
   geom_smooth(method='lm',col="purple")
 
-ggsave(scatter_residual, file = "residuals_scatter.png")
+ggsave(scatter_residuals, file = "residuals_scatter.png")
 
 # Print plot object
 scatter_residuals
 
-# (3.c.) Write the prediction equation ----
+# (4.c.) Write the prediction equation ----
 
 

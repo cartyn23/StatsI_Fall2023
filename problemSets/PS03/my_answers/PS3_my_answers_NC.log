@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.8)  16 NOV 2023 12:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.8)  16 NOV 2023 13:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1005,11 +1005,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 252--253
  []
 
 (PS3_my_answers_NC.R)
-<vote_share_pres_scatter.png, id=63, 437.7153pt x 176.3388pt>
+<vote_share_pres_scatter.png, id=63, 437.2335pt x 176.3388pt>
 File: vote_share_pres_scatter.png Graphic file (type png)
 <use vote_share_pres_scatter.png>
 Package pdftex.def Info: vote_share_pres_scatter.png  used on input line 262.
-(pdftex.def)             Requested size: 465.06004pt x 187.36488pt.
+(pdftex.def)             Requested size: 465.06004pt x 187.56668pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1060,11 +1060,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 357--358
  []
 
 (PS3_my_answers_NC.R)
-<vote_share2_scatter.png, id=98, 437.7153pt x 176.3388pt>
+<vote_share2_scatter.png, id=98, 437.2335pt x 176.3388pt>
 File: vote_share2_scatter.png Graphic file (type png)
 <use vote_share2_scatter.png>
 Package pdftex.def Info: vote_share2_scatter.png  used on input line 367.
-(pdftex.def)             Requested size: 465.06004pt x 187.36488pt.
+(pdftex.def)             Requested size: 465.06004pt x 187.56668pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1095,11 +1095,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 409--411
  []
 
 [11] (PS3_my_answers_NC.R)
-<residuals_scatter.png, id=128, 437.7153pt x 176.3388pt>
+<residuals_scatter.png, id=128, 437.2335pt x 176.3388pt>
 File: residuals_scatter.png Graphic file (type png)
 <use residuals_scatter.png>
 Package pdftex.def Info: residuals_scatter.png  used on input line 456.
-(pdftex.def)             Requested size: 465.06004pt x 187.36488pt.
+(pdftex.def)             Requested size: 465.06004pt x 187.56668pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 465--466
 
@@ -1132,7 +1132,7 @@ ers/carty/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb
 mr8.pfb><C:/Users/carty/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmsy10.pfb><C:/Users/carty/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmtt12.pfb>
-Output written on PS3_my_answers_NC.pdf (13 pages, 1016375 bytes).
+Output written on PS3_my_answers_NC.pdf (13 pages, 1022852 bytes).
 PDF statistics:
  236 PDF objects out of 1000 (max. 8388607)
  96 named destinations out of 1000 (max. 500000)
