@@ -158,7 +158,7 @@ scatter_pres <-
                        y = presvote)) +
   geom_point() +
   labs(x = "Campaign Spending", 
-       y = "Presidential candidate of the incumbent's party vote share") +
+       y = "Pres candidate inc party vote") +
   
   geom_smooth(method='lm',col="green")
 
@@ -220,8 +220,8 @@ scatter_vote <-
          mapping = aes(x = inc.sub$presvote, 
                        y = inc.sub$voteshare)) +
   geom_point() +
-  labs(x = "President Party vote share", 
-       y = "Incumbent electoral success") +
+  labs(x = "Pres Party vote share", 
+       y = "Inc electoral success") +
   
   geom_smooth(method='lm',col="yellow")
 
@@ -242,8 +242,8 @@ new_vote_residuals <- model_vote$residuals
 
 # Test for correlation
 
-cor.test(inc.sub$presvote, inc.sub$voteshare)
-
+correlation <- cor.test(inc.sub$presvote, inc.sub$voteshare)
+correlation 
 
 # Question 4 -----
 
@@ -283,7 +283,7 @@ scatter_residuals <-
          mapping = aes(x = pres_residuals, 
                        y = vote_residuals)) +
   geom_point() +
-  labs(x = "Presidntial Party candidate Residuals", 
+  labs(x = "Presidential Party Candidate Residuals", 
        y = "Vote Residuals") +
   
   geom_smooth(method='lm',col="purple")
@@ -293,6 +293,20 @@ ggsave(scatter_residuals, file = "residuals_scatter.png")
 # Print plot object
 scatter_residuals
 
-# (4.c.) Write the prediction equation ----
+
+
+# Question 5 -----
+
+#What if the incumbent’s vote share is affected by both the president’s popularity and the
+#difference in spending between incumbent and challenger?
+ # 1. Run a regression where the outcome variable is the incumbent’s voteshare and the
+# explanatory variables are difflog and presvote
+
+multi_model <- lm(inc.sub$voteshare ~ inc.sub$difflog + inc.sub$presvote, data=inc.sub)
+summary(multi_model)
+
+# Write the prediction equation.
+
+
 
 
