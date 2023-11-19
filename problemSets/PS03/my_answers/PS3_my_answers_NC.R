@@ -269,6 +269,10 @@ model_residuals <- lm(vote_residuals ~ pres_residuals, data=inc.sub)
 
 summary(model_residuals)
 
+sprintf("%.20f",2.569e-01)
+sprintf("%.20f",-5.934e-18)
+
+
 # the slope is equal to -2.059e-01   
 # So we do not have enough evidence to reject the null hypothesis in this instance.
 
@@ -306,6 +310,7 @@ multi_model <- lm(inc.sub$voteshare ~ inc.sub$difflog + inc.sub$presvote, data=i
 summary(multi_model)
 
 # Write the prediction equation.
+
 
 
 
