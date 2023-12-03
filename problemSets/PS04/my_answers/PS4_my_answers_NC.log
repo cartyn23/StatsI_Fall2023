@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.8)  3 DEC 2023 20:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.8)  3 DEC 2023 21:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1054,11 +1054,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 249--250
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 252--253
 
  []
@@ -1098,18 +1093,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 278--279
 
  []
 
-[6]
+
 Underfull \hbox (badness 10000) in paragraph at lines 280--281
 
  []
 
-
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 284--285
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 285--286
 
  []
 
@@ -1120,11 +1110,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 287--288
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 289--290
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
 
  []
 
@@ -1156,7 +1141,7 @@ sy10.pfb><C:/Users/carty/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
 nts/cm/cmti10.pfb><C:/Users/carty/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/amsfonts/cm/cmti12.pfb><C:/Users/carty/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on PS4_my_answers_NC.pdf (7 pages, 172688 bytes).
+Output written on PS4_my_answers_NC.pdf (7 pages, 172812 bytes).
 PDF statistics:
  115 PDF objects out of 1000 (max. 8388607)
  10 named destinations out of 1000 (max. 500000)
